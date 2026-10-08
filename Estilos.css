@@ -248,33 +248,6 @@ margin-left: 12%; }
 .Nada h2 {padding-left: 3%; padding-right: 3%; font-size: 1.2vw;}
 .Nada p {padding-left: 3%; padding-right: 3%;}
 
-/*RELOJ*/
-.Fecha {display: flex; width: 280px; margin-bottom: 3%;
-    height: 50px; background: rgba(191, 44, 228, 0.274);
-    justify-content: center; align-items: center;
-    }
-    
-    .Fecha p {font-size: 23px; color: white; font-family: 'Inconsolata', monospace; }
-    
-    .Hora {
-        display: flex; width: 280px; height: 100px;
-        background: rgba(191, 44, 228, 0.274);
-        align-items: center; justify-content: center;
-    }
-    
-    .Hora p {font-size: 50px; color: white; font-family: 'Inconsolata', monospace; }
-    
-    
-    #Caja_ULT {height: 100%; width: 20%; display: flex;
-    justify-content: center; align-items: center; flex-direction: column; 
-      }
-    
-    #Segundos{font-size: 40px; color: white; font-family: 'Inconsolata', monospace; }
-    
-    #AMPM {font-size: 25px; color: white; font-family: 'Inconsolata', monospace;  }
-    
-    .Contenedor_Reloj { left: 5%; 
-    }
 /*BLOQUEO DE NIVELES*/
 #NIVEL_01 {display: block;}
 #NIVEL_02 {display: none;}
