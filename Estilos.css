@@ -56,7 +56,8 @@ margin-left: auto; margin-right: auto; margin: auto; margin-top: -3%; }
 
 .Titulo_Reglas{font-size: 2.4VW; position: relative; top: -20%; left: 2%; font-family: 'Press Start 2P', cursive;}
 
-.Img_reglas {margin-top: 1%; margin-left: 2%; width: 34%}
+.Img_reglas {margin-top: 1%; margin-left: 2%; width: 40%}
+/*pitt camvio el tamaño de las iamgenes que puso*/
 
 .Reglas_estilos {background: rgba(248, 248, 248, 0.521); color: black; border: 0.19vw solid black; 
 width: 40%; height: auto; position: absolute;   left: 58% ; font-size: 1.14vw;}
@@ -81,7 +82,8 @@ font-family: 'Inconsolata', monospace;}
 text-align: left; font-size: 40px; position: absolute; 
 left: -100%;}
 
-.Imgane_metiorito{position: absolute; top: 210px; left: -100%; width:600px}/*ESTA ES LA IMAGEN DEL METIORITO CALLENDO A LA TIERRA*/
+.Imgane_metiorito{position: absolute; top: 210px; left: -100%; width:900px}/*ESTA ES LA IMAGEN DEL METIORITO CALLENDO A LA TIERRA*/
+/*pitt cambio el tamaño de su imagen que puso del meteoro*/
 
 .Contenedor_Historia{width: 40%;     /*ESTE ES EL CONENTENEDOR DE LA HISTORIA*/
 background: rgba(255, 255, 255, 0.659);
