@@ -403,6 +403,7 @@ margin-left: 12%; }
         height: 500px; 
         border: 5px dashed red; 
         background: url(IMG/img.106.gif) no-repeat 50% 50% ;
+     /*cambio de pitt imagenes*/
         background-size: cover;
         position: relative;
         top: 4%;
