@@ -1,7 +1,7 @@
 html body{margin: 0; padding: 0; font-family: sans-serif;}/*RESTABLESCO LA PAGINA, SI MARGEN EN LOS BORDES*/
 
 
-#Fondo {background-image: url(IMG/Fondo_Espacio.gif) ; color: white; background-attachment: fixed; background-repeat: no-repeat;
+#Fondo {background-image: url(IMG/galaxiareal.jpg) ; color: white; background-attachment: fixed; background-repeat: no-repeat;
 background-size: 100% 120%;
  }
 
@@ -15,7 +15,7 @@ background-size: 100% 120%;
 /*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
 
 .Contenedor_RC {width: 7vw; height: 3vw; border-radius: 3rem; background: transparent; border: 3px solid white; position: relative;
-left: 44%; top: 4%; cursor: pointer;}
+left: 44%; top: 5%; cursor: pointer;}
 .Recursos {width: 40%; height: 100%; border-radius: 50%; background: white; margin-left: 0%; transition: 1s;}
 
 
@@ -23,166 +23,480 @@ left: 44%; top: 4%; cursor: pointer;}
 /*PRIMERA SECCION------------------------------------------------------------------------------------------------------*/
 
 .Seccion_01{width: 100%; height: 100vh; overflow: hidden; position: relative; top: 0px; display: flex; flex-direction: column; align-items: center; justify-content: center;}/*ESTE ES EL CONTENEDOR DE
-                                                                                            LA SECCION 01*/
+                                                                                                            LA SECCION 01*/
 
-.Texto_Principal { /*ESTE ES EL TITULO DE IRON FIST*/
-    font-family: 'Press Start 2P', cursive; text-align: center;
-    font-size: 3.8vw;
-    text-align: center;
-    position: relative;
-    top: -12%;
+/* TITULO PRINCIPAL "IRON FIST" (ORBITRON CROMADO Y AGRANDADO) */
+.Nombre {
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 150px !important; /* <--- AQUÍ AJUSTAS EL TAMAÑO (110px, 130px, 140px, etc.) */
+  line-height: 1 !important;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: 12%;
+  padding-bottom: 0%;
+  margin: 10px 0;
+  
+  /* Degradado metálico de arriba hacia abajo */
+  background: linear-gradient(180deg, #ffffff 0%, #b3e5ff 45%, #3a9bdc 75%, #1e5a99 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Resplandor neón azul */
+  filter: 
+    drop-shadow(0 0 5px rgba(255, 255, 255, 0.575))
+    drop-shadow(0 0 15px rgba(82, 165, 219, 0.9))
+    drop-shadow(0 0 35px rgba(0, 183, 255, 0.7));
 }
 
-.Nombre{ /*ESTE ES LA PREGUNTA DEBAJO DEL NOMBRE*/
-    font-family: 'Press Start 2P', cursive; text-align: center;
-    font-size: 5.9vw;
-    text-align: center;
-    position: relative;
-    top: 0%;
-    padding-bottom: 0%;
+/* Subtítulo "¿LISTO PARA DEFENDER EL PLANETA?" */
+.Texto_Principal {
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 1 !important;
+  font-size: 30px !important;
+  letter-spacing: 10px;
+  color: #e6f7ff;
+  text-align: center;
+  position: relative;
+  top: 120px;
 
+  margin-top: 15px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Resplandor azul */
+  text-shadow: 
+    0 0 5px #ffffff,
+    0 0 10px rgba(82, 165, 219, 0.9),
+    0 0 20px rgba(0, 183, 255, 0.8);
 }
 
-.Boton {width: 20vw; height: 4vw; background: rgb(144, 90, 196); /*Este es el boton de JUGAR*/
-cursor: pointer;font-family: 'Press Start 2P', cursive;
-color: white; border-radius: 2px; border: none;
-margin-left: auto; margin-right: auto; margin: auto; margin-top: -3%; }
+/* Asegurar posicionamiento en la primera sección */
+.Seccion_01 {
+  position: relative;
+}
+
+/* NOMBRE DE LA VERSION 2.0 DE IRON FISTssss*/
+.version-tag {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  pointer-events: none;
+  text-shadow: 0 0 6px rgba(82, 165, 219, 0.5);
+}
+
+.Boton {
+  position: relative;
+  width: 20vw;
+  height: 4vw;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin: auto;
+  margin-top: 7%;
+  
+  /* Fondo azul oscuro semi-transparente */
+  background: rgba(10, 24, 46, 0.85);
+  
+  /* Borde azul interno con brillo */
+  border: 2px solid #52a5db;
+  border-radius: 10px;
+  box-shadow: 
+    0 0 8px rgba(82, 165, 219, 0.6),
+    inset 0 0 10px rgba(82, 165, 219, 0.4);
+  
+  outline: none;
+  transition: all 0.3s ease;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Efecto Hover */
+.Boton:hover {
+  background: rgba(15, 38, 70, 0.95);
+  color: #00ffff;
+  border-color: #00ffff;
+  box-shadow: 
+    0 0 18px rgba(0, 255, 255, 0.8),
+    inset 0 0 12px rgba(0, 255, 255, 0.6);
+  transform: scale(1.03);
+}
+
+/* Base de las 4 esquinas rojas neón */
+.Boton .corner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px #ff2a6d);
+}
+
+/* Esquina Superior Izquierda */
+.Boton .top-left {
+  top: -8px;
+  left: -8px;
+  border-top: 4px solid #ff2a6d;
+  border-left: 4px solid #ff2a6d;
+  border-top-left-radius: 12px;
+}
+
+/* Esquina Superior Derecha */
+.Boton .top-right {
+  top: -8px;
+  right: -8px;
+  border-top: 4px solid #ff2a6d;
+  border-right: 4px solid #ff2a6d;
+  border-top-right-radius: 12px;
+}
+
+/* Esquina Inferior Izquierda */
+.Boton .bottom-left {
+  bottom: -8px;
+  left: -8px;
+  border-bottom: 4px solid #ff2a6d;
+  border-left: 4px solid #ff2a6d;
+  border-bottom-left-radius: 12px;
+}
+
+/* Esquina Inferior Derecha */
+.Boton .bottom-right {
+  bottom: -8px;
+  right: -8px;
+  border-bottom: 4px solid #ff2a6d;
+  border-right: 4px solid #ff2a6d;
+  border-bottom-right-radius: 12px;
+}
 
 /*SECCION REGLAS ------------------------------------------------------------------------------------------------------*/
 
 
 
-#Reglas{position: relative; width: 100%; top: 120%;}
+#Reglas { 
+  position: relative; 
+  width: 100%; 
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 6, 16, 0.88);
+}
 
-.Titulo_Reglas{font-size: 2.4VW; position: relative; top: -20%; left: 2%; font-family: 'Press Start 2P', cursive;}
+/* MARCO RECTANGULAR PRINCIPAL */
+.Marco_Principal_Reglas {
+  width: 72%;
+  max-width: 1100px;
+  height: auto; 
+  min-height: 540px;
+  background: rgba(8, 22, 45, 0.65);
+  border: 2px solid #1e6fa8;
+  border-radius: 16px;
+  box-shadow: 
+    0 0 25px rgba(0, 183, 255, 0.25),
+    inset 0 0 35px rgba(0, 183, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 28px 26px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
 
-.Img_reglas {margin-top: 1%; margin-left: 2%; width: 40%}
-/*pitt camvio el tamaño de las iamgenes que puso*/
+/* TITULO DE LA SECCION */
+.Titulo_Reglas {
+  font-size: 1.9vw; 
+  margin: 0 0 20px 0;
+  font-family: 'Orbitron', sans-serif !important;
+  font-weight: 900 !important;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.9),
+    0 0 15px rgba(82, 165, 219, 0.9),
+    0 0 30px rgba(0, 183, 255, 0.7);
+}
 
-.Reglas_estilos {background: rgba(248, 248, 248, 0.521); color: black; border: 0.19vw solid black; 
-width: 40%; height: auto; position: absolute;   left: 58% ; font-size: 1.14vw;}
+/* ESTRUCTURA QUE ALINEA IZQUIERDA Y DERECHA */
+.Contenedor_Reglas_Layout {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+  align-items: stretch;
+}
 
-#R1 {top: -4%;}
-#R2 {top: 38%;}
-#R3_4 {top: 75%;}
-.Reglas_estilos h3  {margin-left: 3%; margin-right: 3%; text-align: center;} 
-.Reglas_estilos p  {margin-left: 3%; margin-right: 3%; text-align: center;} 
+/* COLUMNA IZQUIERDA (IMAGEN Y BOTON) */
+.Columna_Izquierda {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Empuja el botón al fondo */
+}
 
-.Listo {width: 34%; height: 8vh; background: rgb(100, 21, 146); display: flex; 
-align-items: center; justify-content: center; cursor: pointer; position: relative; left: 2%; top: 2vw; font-size: 1.5vw;
-font-family: 'Inconsolata', monospace;}
+.Contenedor_Marco_Imagen {
+  width: 100%;
+  border: 2px solid #00b7ff;
+  border-radius: 10px;
+  padding: 4px;
+  background: rgba(0, 183, 255, 0.05);
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.3);
+  box-sizing: border-box;
+}
 
+.Img_reglas { 
+  width: 100%; 
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
 
+/* BOTON EMPUJADO MAS ABAJO */
+#Reglas .Columna_Izquierda .Boton {
+  margin: 0;
+  margin-top: 35px !important; /* <--- Ajusta la distancia con respecto a la imagen */
+  width: 100%;
+  height: 48px;
+  font-size: 0.95vw;
+  text-transform: uppercase;
+}
 
+/* COLUMNA DERECHA (3 TARJETAS) */
+.Contenedor_Columnas_Reglas {
+  width: 60%;
+  display: flex;
+  gap: 12px;
+}
+
+/* TARJETAS CON ALTURA PROPORCIONAL */
+.Regla_Tarjeta_Vertical {
+  flex: 1;
+  min-height: 330px;
+  background: rgba(5, 18, 38, 0.85);
+  border: 1.5px solid #0a5f9e;
+  border-radius: 10px;
+  padding: 16px 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 0 12px rgba(0, 183, 255, 0.15), inset 0 0 15px rgba(0, 183, 255, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.Regla_Tarjeta_Vertical:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* BORDES SUPERIORES DE COLOR */
+.Regla_Verde { border-top: 4px solid #00ff66; }
+.Regla_Amarilla { border-top: 4px solid #ffcc00; }
+.Regla_Roja { border-top: 4px solid #ff2a6d; }
+
+/* ENCABEZADOS DE LAS TARJETAS */
+.Regla_Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Regla_Icono {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #00b7ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00ffff;
+  font-size: 14px;
+  margin-bottom: 6px;
+  background: rgba(0, 183, 255, 0.1);
+}
+
+.Regla_Tarjeta_Vertical h3 {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: 0.85vw !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.5px;
+}
+
+.Regla_Tarjeta_Vertical p {
+  margin: 0;
+  text-align: left;
+  font-size: 0.72vw !important;
+  color: #8cbcdc;
+  line-height: 1.35;
+  font-family: sans-serif;
+}
 /*SEGUNDA SECCION------------------------------------------------------------------------------------------------------*/
 
-#Seccion_2 {position: relative; top: 10%;}/*Este es el contenedor de laseccion 2*/
+#Seccion_2 {
+  position: relative; 
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
 
-.Titulo_historia{font-family: 'Press Start 2P', cursive; /*ESTE ES EL TITULO DE LA SEGUNDA SECCION*/
-text-align: left; font-size: 40px; position: absolute; 
-left: -100%;}
+.Titulo_historia{
+  font-family: 'Orbitron', sans-serif !important; 
+  font-weight: 900 !important;
+  text-align: left; 
+  font-size: 40px; 
+  position: absolute; 
+  left: -100%;
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(82, 165, 219, 0.9);
+}
 
 .Imgane_metiorito{position: absolute; top: 210px; left: -100%; width:900px}/*ESTA ES LA IMAGEN DEL METIORITO CALLENDO A LA TIERRA*/
 /*pitt cambio el tamaño de su imagen que puso del meteoro*/
 
-.Contenedor_Historia{width: 40%;     /*ESTE ES EL CONENTENEDOR DE LA HISTORIA*/
-background: rgba(255, 255, 255, 0.659);
-color: black; padding-top: 2%; padding-right: 2%;
-padding-left: 2%; padding-bottom: 2%; float: right;
-position: relative; right: 100%; top: 194px;}
+.Contenedor_Historia{
+  width: 40%;     /*ESTE ES EL CONENTENEDOR DE LA HISTORIA*/
+  background: rgba(10, 24, 46, 0.85);
+  color: #ffffff; 
+  border: 1px solid #52a5db;
+  border-radius: 10px;
+  padding: 2%; 
+  float: right;
+  position: relative; 
+  right: 100%; 
+  top: 194px;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.2);
+}
 
-.Boton_preparado{width: 70%; height: 6vh; /*ESTE ES EL BOTON DE LA HISTORIA*/
-background: black; display: flex; font-size: 1.2vw;
-justify-content: center; align-items: center;
-cursor: pointer; color: white; font-family: 'Inconsolata', monospace;
- }
+.Boton_preparado{
+  width: 70%; 
+  height: 6vh; /*ESTE ES EL BOTON DE LA HISTORIA*/
+  background: #00b7ff; 
+  display: flex; 
+  font-size: 1.2vw;
+  justify-content: center; 
+  align-items: center;
+  cursor: pointer; 
+  color: white; 
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.Boton_preparado:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 15px #00ffff;
+}
 
 .Contenedor_narracion {width: 9vh; height: 9vh; background: black; color: white; border-radius: 0.5rem;
-display: flex; justify-content: center; align-items: center; cursor: pointer; margin-left: 10%;}
+display: flex; justify-content: center; align-items: center; cursor: pointer; margin-left: 10%; border: 1px solid #52a5db;}
 #VOLUMEN{font-size: 90%; }
 #PAUSE {display: none;}
-.BOTONES_2 {display: flex; align-items: center;  margin-top: 5%; height: 9vh; width: 50%; overflow: hidden;
+.BOTONES_2 {display: flex; align-items: center;  margin-top: 5%; height: 9vh; width: 100%; overflow: hidden;
 margin: auto;}
 
 /*TERCERA SECCION------------------------------------------------------------------------------------------------------*/
 
-
-
 .Titulo-Jugar{text-align: center; /*TITULO DE LA ULTIMA SECCION*/
-font-family: 'Press Start 2P', cursive; text-align: center;
+font-family: 'Orbitron', sans-serif !important; text-align: center;
 font-size: 60px;position: relative; top: 0%; left: -110%; padding-bottom: 2%;}
    
 
-.Tituloar_Juego_5 {font-family: 'Press Start 2P', cursive; text-align: center; font-size: 60px;}
+.Tituloar_Juego_5 {font-family: 'Orbitron', sans-serif !important; text-align: center; font-size: 45px; color: #ffffff; text-shadow: 0 0 15px rgba(0, 183, 255, 0.8);}
 
 .Contenedor_Mensaje_Star{height: 60%; width: 100%; left: 0%;  background: transparent;
 position: absolute; top: 20%; overflow: hidden; transition: 2.3s;}
 
 /*FONDO DE LA SECCION PRINCIPAL*/
-.Seccion_Juego {width: 100%; height: 160vh; 
-    background-size: cover; display: flex;
-    align-items: center; justify-content: center;
-    flex-direction: column; position: absolute; top: -12%; left: -100%;  transition: 2s;       }
+.Seccion_Juego {
+  width: 100%; 
+  height: 100vh; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column; 
+  position: absolute; 
+  top: 0%; 
+  left: -100%;  
+  transition: 2s;      
+}
     
     /*ESTILOS DENTRO DEL CONTENEDOR DEL JUEGO*/
     .Contenedor {width: 900px; height: 500px; 
-    border: 5px dashed purple; 
+    border: 3px solid #00ffff; 
     background: url(IMG/img.103.gif) no-repeat 50% 50%; 
-    background-size: cover; position: relative; top: 4%; overflow: hidden;  }
+    background-size: cover; position: relative; top: 2%; overflow: hidden; border-radius: 8px; box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); }
 
     /*CABEZARA DENTRO DEL JUEGO*/
     .Cabezera {height: 70px; 
-    border: 5px dashed purple; 
-    background: rgba(255, 255, 255, 0.363); 
+    border: 3px solid #00ffff; 
+    background: rgba(10, 24, 46, 0.85); 
     border-bottom: none; display: flex; 
-    align-items: center; position: relative; }
+    align-items: center; position: relative; color: white;}
     
     /*Pantalla start del inicio del juego*/
-    .Start {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.582);
-    position: absolute; top: 0%; z-index: 100000000000; 
+    .Start {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75);
+    position: absolute; top: 0%; z-index: 1000; 
     display: flex; align-items: center; 
     justify-content: center; flex-direction: column; 
     color: white; text-align: center;}
     
     /*Boton de la pantalla start*/
-    .Play {background: purple; color: white;
+    .Play {background: #00b7ff; color: white;
     width: 18%; height: 15%; display: flex; 
     align-items: center; left: 0px;
     justify-content: center; cursor: pointer;
-    position: relative;  transition: 2s; top: 18%;
-    font-family: 'Press Start 2P', cursive; margin: auto;}
+    position: relative;  transition: 0.3s; top: 18%;
+    font-family: 'Orbitron', sans-serif; font-weight: 700; margin: auto; border-radius: 6px;}
 
+    .Play:hover { background: #00ffff; color: black; box-shadow: 0 0 15px #00ffff; }
 
-    
     /*TITULO CENTRAL DE START*/
-    .Texo {font-size: 36px;
+    .Texo {font-size: 32px;
     left: 0px;  transition: 2s;
-    font-family: 'Press Start 2P', cursive;
-    line-height: 70px; margin-top: 0% ;}
+    font-family: 'Orbitron', sans-serif !important;
+    line-height: 50px; margin-top: 0% ;}
 
-    .Pollo{font-family: 'Press Start 2P', cursive; margin-top: 0%;}
+    .Pollo{font-family: 'Orbitron', sans-serif !important; margin-top: 0%;}
     
     #Contenedor_contador {height: 100%; 
     display: table; position: absolute;}
     
     /*ESTILOS DE LOS NUMEROS DEL COTEO EN START*/
     #RGB {font-size: 220px; position: relative; 
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Orbitron', sans-serif !important;
     display: table-cell; vertical-align: middle; }
     
     /*PANTALLA DE PAUSE*/
     .Pausa_Pantalla {position: absolute; top: 0%; width: 100%;
-    height: 100%; background: rgba(0, 0, 0, 0.541);
-    text-align: center; z-index: 1000000000; display: none;}
+    height: 100%; background: rgba(0, 0, 0, 0.7);
+    text-align: center; z-index: 1000; display: none;}
 
-    .GANASTE_PANTALLA {position: absolute; width: 100%; height: 100%; background: rgba(47, 255, 57, 0.63);
-    z-index: 900; top: 0%; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none;}
+    .GANASTE_PANTALLA {position: absolute; width: 100%; height: 100%; background: rgba(10, 35, 20, 0.9);
+    z-index: 900; top: 0%; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none; border: 2px solid #00ff66;}
 
-    .GANASTE_PANTALLA h1 {font-family: 'Press Start 2P', cursive; color: rgb(10, 90, 16);
+    .GANASTE_PANTALLA h1 {font-family: 'Orbitron', sans-serif !important; color: #00ff66;
     text-align: center; font-size: 2rem;}
 
-    .GANASTE_PANTALLA h3 {text-align: center; padding-left: 10%; padding-right: 10%; color: rgb(0, 0, 0);
-    font-family: 'Press Start 2P', cursive;}
+    .GANASTE_PANTALLA h3 {text-align: center; padding-left: 10%; padding-right: 10%; color: #ffffff;
+    font-family: sans-serif;}
     
     #Sin_Audio {display: none; font-size: 20px; color: white;}
 
@@ -215,211 +529,143 @@ position: absolute; top: 20%; overflow: hidden; transition: 2.3s;}
     
     /*ESTILO DEL LIMITE EN EL JUEGO*/
     .Limite {height: 100%; width: 50px;
-    border-left: 5px dashed white; 
+    border-left: 3px dashed #ff2a6d; 
     position: absolute; top: 0%; left: 70%;}
     
     /*ESTILOS DEL SPAN Y DEL TEXTO DE TIEMPO*/
     .Tiempo {display: flex; align-items: center;
     flex-direction: column;
-    width: 14%; height: 70%; color: black; 
-    font-size: 13px; line-height: 1vh ;  }
+    width: 20%; height: 70%; color: #ffffff; 
+    font-size: 13px; font-family: 'Orbitron', sans-serif; }
     
     /*ESTILOS DEL SPAN Y DEL TEXTO DE PUNTAJE*/
     .Puntaje {display: flex; align-items: center; 
     flex-direction: column; 
-    width: 14%; height: 70%; color: black; 
-    font-size: 13px; line-height: 1vh;  }
+    width: 20%; height: 70%; color: #ffffff; 
+    font-size: 13px; font-family: 'Orbitron', sans-serif; }
     
     /*ESTILOS DEL BOTON DE PAUSE*/
-    .Pause {width: 20%; height: 70%; font-size: 14px;
-    background: purple; display: flex;
+    .Pause {width: 25%; height: 70%; font-size: 12px;
+    background: #00b7ff; display: flex;
     align-items: center; justify-content: center;
     color: white; cursor: pointer; position: relative;
-    left: 50%; }
+    left: 30%; border-radius: 4px; font-family: 'Orbitron', sans-serif;}
     
     /*MENSAJE DENTRO DE PAUSE*/
-    .Mensaje_Pause{font-size: 50px; color: white;
+    .Mensaje_Pause{font-size: 40px; color: white;
      display: table-cell; vertical-align: middle;
-      font-family: 'Press Start 2P', cursive;}
+      font-family: 'Orbitron', sans-serif !important;}
 
 .NEXT {width: 15vw; height: 3vw; background: rgb(0, 132, 255); font-size: 0.9vw; display: flex; align-items: center; justify-content: center; cursor: pointer; float: right;
-margin-left: 12%; }
+margin-left: 12%; font-family: 'Orbitron', sans-serif; border-radius: 4px;}
 
-.Contenedor_LVL{display: flex; justify-content: center; align-items: center; width: 100%; position: relative; top: 10%;}
-.Nada {width: 45vw; height: auto; background: rgba(191, 44, 228, 0.274); border: 2px solid purple; color: white; position: relative; left: 6%;  }
-.Nada h2 {padding-left: 3%; padding-right: 3%; font-size: 1.2vw;}
-.Nada p {padding-left: 3%; padding-right: 3%;}
+.Contenedor_LVL{display: flex; justify-content: center; align-items: center; width: 100%; position: relative; top: 2%;}
+.Nada {width: 45vw; height: auto; background: rgba(10, 24, 46, 0.85); border: 1px solid #52a5db; color: white; position: relative; left: 6%; border-radius: 6px; }
+.Nada h2 {padding-left: 3%; padding-right: 3%; font-size: 1.1vw; font-family: 'Orbitron', sans-serif;}
+.Nada p {padding-left: 3%; padding-right: 3%; font-size: 0.9vw;}
 
 /*BLOQUEO DE NIVELES*/
 #NIVEL_01 {display: block;}
 #NIVEL_02 {display: none;}
 #NIVEL3 {display: none;}
 
-
-
 /*RESPONSIVE */
 @media (max-width: 1196px){
     .Imgane_metiorito{width: 47%; top: 16vw;}
     .Boton_preparado{width: 38%;}
-    .Titulo-Jugar {font-size: 50px;}
+    .Titulo-Jugar {font-size: 40px;}
     .Contenedor_Historia{top: 15vw; font-size: 1.3vw;}
-    
 }
-
 
 /*LVL 2 ---------------------------------------------------------------------------------------------------------*/
 
-
-    
-    /*ESTILOS DENTRO DEL CONTENEDOR DEL JUEGO*/
     .Contenedorlvl2 {width: 900px; height: 500px; 
-    border: 5px dashed rgb(46, 86, 218); 
+    border: 3px solid #0011ff; 
     background: url(IMG/img.105.gif) no-repeat 50% 50%;
-    background-size: cover; position: relative; top: 4%; overflow: hidden;}
+    background-size: cover; position: relative; top: 4%; overflow: hidden; border-radius: 8px;}
     
-    /*Pantalla start del inicio del juego*/
-    .Startlvl2 {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.582);
-    position: absolute; top: 0%; z-index: 100000000000; 
+    .Startlvl2 {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.75);
+    position: absolute; top: 0%; z-index: 1000; 
     display: flex; align-items: center; 
     justify-content: center; flex-direction: column; 
     color: white; text-align: center;}
     
-    /*Boton de la pantalla start*/
     .Playlvl2 {background: rgb(0, 119, 255); color: white;
     width: 18%; height: 9%; display: flex; 
     align-items: center; left: 0px;
     justify-content: center; cursor: pointer;
     position: relative; transition: 2s; margin-top: -2%;
-    font-family: 'Press Start 2P', cursive;}
+    font-family: 'Orbitron', sans-serif; border-radius: 6px;}
     
-    /*TITULO CENTRAL DE START*/
-    .Texolvl2 {font-size: 36px; position: relative;
+    .Texolvl2 {font-size: 32px; position: relative;
         left: 0px; top: -15%; transition: 2s;
-        font-family: 'Press Start 2P', cursive;
-        line-height: 70px;}
+        font-family: 'Orbitron', sans-serif !important;
+        line-height: 50px;}
 
     #Dificultad {display: flex; 
     justify-content: center; width: 100%;
     position: absolute; top: 45%; left: 0px; transition: 2s;}
     
-    #Contenedor_contadorlvl2 {height: 100%; 
-    display: table; position: absolute;}
+    #Contenedor_contadorlvl2 {height: 100%; display: table; position: absolute;}
+    #RGBlvl2 {font-size: 220px; position: relative; font-family: 'Orbitron', sans-serif !important; display: table-cell; vertical-align: middle; }
     
-    /*ESTILOS DE LOS NUMEROS DEL COTEO EN START*/
-    #RGBlvl2 {font-size: 220px; position: relative; 
-    font-family: 'Press Start 2P', cursive;
-    display: table-cell; vertical-align: middle; }
-    
-    /*PANTALLA DE PAUSE*/
     .Pausa_Pantallalvl2 {position: absolute; top: 0%; width: 100%;
-    height: 100%; background: rgba(0, 0, 0, 0.541);
-    text-align: center; z-index: 1000000000; display: none;}
+    height: 100%; background: rgba(0, 0, 0, 0.7);
+    text-align: center; z-index: 1000; display: none;}
     
-    .GanastePantallaLvL2 {position: absolute; width: 100%; height: 100%; background: rgba(47, 255, 57, 0.63);
-        z-index: 900; top: 0%; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none;}
+    .GanastePantallaLvL2 {position: absolute; width: 100%; height: 100%; background: rgba(10, 35, 20, 0.9);
+        z-index: 900; top: 0%; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none; border: 2px solid #00ff66;}
     
-    .GanastePantallaLvL2 h1 {font-family: 'Press Start 2P', cursive; color: rgb(10, 90, 16);
-        text-align: center; font-size: 2rem;}
-    
-    .GanastePantallaLvL2 h3 {text-align: center; padding-left: 10%; padding-right: 10%; color: rgb(0, 0, 0);
-        font-family: 'Press Start 2P', cursive;}
+    .GanastePantallaLvL2 h1 {font-family: 'Orbitron', sans-serif !important; color: #00ff66; text-align: center; font-size: 2rem;}
+    .GanastePantallaLvL2 h3 {text-align: center; padding-left: 10%; padding-right: 10%; color: #ffffff; font-family: sans-serif;}
 
-
-    /*ESTILOS GENERALES DE LOS METIORITOS*/
-    .Meteioritolvl2 {cursor: pointer; display: table; 
-    position: absolute; z-index: 1000; }
-    
-    /*ESTILOS INDIVIDUALES DE MIS DOS METIORITOS*/
+    .Meteioritolvl2 {cursor: pointer; display: table; position: absolute; z-index: 1000; }
     #Meteioritolvl2{top: 0%; position: absolute; left: -30%; transition: 2s;}
     #Meteiorito2lvl2{ top: 0%; position: absolute; left: -30%; transition: 2s;}
     #Meteiorito3lvl2{top: 0%; position: absolute; left: -30%; transition: 2s;}
-    /*ESTILO DEL PLANETA*/
-    .Planetalvl2 {position: absolute; top: 12%; left: 80%;
+    
+    .Planetalvl2 {
+        position: absolute; top: 12%; left: 80%;
         animation-name: rotation;
         animation-duration: 10s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
     
-    @keyframes rotation {
-      0% {
-        transform:rotate(0deg);
-      }
-      100% {
-        transform:rotate(360deg);
-      }
-    }
+    .Limitelvl2 {height: 100%; width: 50px; border-left: 3px dashed #ff2a6d; position: absolute; top: 0%; left: 70%;}
     
-    /*ESTILO DEL LIMITE EN EL JUEGO*/
-    .Limitelvl2 {height: 100%; width: 50px;
-    border-left: 5px dashed white; 
-    position: absolute; top: 0%; left: 70%;}
+    .Cabezeralvl2 {height: 70px; border: 3px solid rgb(0, 119, 255); background: rgba(10, 24, 46, 0.85); border-bottom: none; display: flex; align-items: center; position: relative; color: white;}
     
-    /*CABEZARA DENTRO DEL JUEGO*/
-    .Cabezeralvl2 {height: 70px; 
-    border: 5px dashed rgb(0, 119, 255); 
-    background: rgba(255, 255, 255, 0.363); 
-    border-bottom: none; display: flex; 
-    align-items: center; position: relative; }
+    .Tiempolvl2, .Puntajelvl2 {display: flex; align-items: center; flex-direction: column; width: 20%; height: 70%; color: #ffffff; font-size: 13px; font-family: 'Orbitron', sans-serif;}
     
-    /*ESTILOS DEL SPAN Y DEL TEXTO DE TIEMPO*/
-    .Tiempolvl2 {display: flex; align-items: center;
-        flex-direction: column;
-        width: 14%; height: 70%; color: black; 
-        font-size: 13px; line-height: 1vh ;   }
+    .Pauselvl2 {width: 25%; height: 70%; font-size: 12px; background: rgb(0, 119, 255); display: flex; align-items: center; justify-content: center; color: white; cursor: pointer; position: relative; left: 30%; border-radius: 4px; font-family: 'Orbitron', sans-serif;}
     
-    /*ESTILOS DEL SPAN Y DEL TEXTO DE PUNTAJE*/
-    .Puntajelvl2 {display: flex; align-items: center; 
-     flex-direction: column; margin-top: 2%;
-    width: 14%; height: 100%; color: black; 
-    font-size: 13px; line-height: 7px;}
+    .Mensaje_Pauselvl2{font-size: 40px; color: white; display: table-cell; vertical-align: middle; font-family: 'Orbitron', sans-serif !important;}
     
-    /*ESTILOS DEL BOTON DE PAUSE*/
-    .Pauselvl2 {width: 20%; height: 70%; font-size: 14px;
-    background: rgb(0, 119, 255);; display: flex;
-    align-items: center; justify-content: center;
-    color: white; cursor: pointer; position: relative;
-    left: 50%; }
+    .Perdistelvl2 { color:aqua; }
+    .Aumentarpuntoslvl2 { color: white; }
     
-    /*MENSAJE DENTRO DE PAUSE*/
-    .Mensaje_Pauselvl2{font-size: 50px; color: white; display: table-cell; vertical-align: middle; font-family: 'Press Start 2P', cursive;}
-    
-    /*Alerta*/
-    .Perdistelvl2 {
-     color:aqua;
-     
-    }
-    .Aumentarpuntoslvl2 {
-     color: black;
-    
-    
-    }
-    
-    /*TERCER NIVEL ----------------------------------------------------------------------------------------*/
+/*TERCER NIVEL ----------------------------------------------------------------------------------------*/
 
-
-    
-    /*ESTILOS DENTRO DEL CONTENEDOR DEL JUEGO*/
     .Contenedorlvl3 {
         width: 900px;
         height: 500px; 
-        border: 5px dashed red; 
+        border: 3px solid red; 
         background: url(IMG/img.106.gif) no-repeat 50% 50% ;
-     /*cambio de pitt imagenes*/
         background-size: cover;
         position: relative;
         top: 4%;
         overflow: hidden;
+        border-radius: 8px;
     }
     
-    /*Pantalla start del inicio del juego*/
     .Startlvl3 {
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.582);
+        background: rgba(0, 0, 0, 0.75);
         position: absolute;
         top: 0%;
-        z-index: 100000000000; 
+        z-index: 1000; 
         display: flex;
         align-items: center; 
         justify-content: center;
@@ -428,7 +674,6 @@ margin-left: 12%; }
         text-align: center;
     }
     
-    /*Boton de la pantalla start*/
     .Playlvl3 {
         background: red;
         color: white;
@@ -436,95 +681,46 @@ margin-left: 12%; }
         height: 9%;
         display: flex; 
         align-items: center;
-        left: 0;
         justify-content: center;
         cursor: pointer;
         position: relative;
         transition: 2s;
-        font-family: 'Press Start 2P', cursive;
+        font-family: 'Orbitron', sans-serif;
+        border-radius: 6px;
     }
     
-    #Dificultadlvl3{display: flex;
-    justify-content: center; width: 100%;
-    top: 49%; position: absolute; left: 0%; transition: 5s;}
+    #Dificultadlvl3{display: flex; justify-content: center; width: 100%; top: 49%; position: absolute; left: 0%; transition: 5s;}
 
-    /*TITULO CENTRAL DE START*/
     .Textolvl3 {
-        font-size: 36px;
+        font-size: 32px;
         position: relative;
         left: 0px; 
         top: -7%;
         transition: 2s;
-        font-family: 'Press Start 2P', cursive;
-        line-height: 70px;
+        font-family: 'Orbitron', sans-serif !important;
+        line-height: 50px;
     }
     
-    #Contenedor_contadorlvl3 {
-        height: 100%; 
-        display: table;
-        position: absolute;
-    }
+    #Contenedor_contadorlvl3 { height: 100%; display: table; position: absolute; }
+    #RGBlvl3 { font-size: 220px; position: relative; font-family: 'Orbitron', sans-serif !important; display: table-cell; vertical-align: middle; }
     
-    /*ESTILOS DE LOS NUMEROS DEL COTEO EN START*/
-    #RGBlvl3 {
-        font-size: 220px;
-        position: relative; 
-        font-family: 'Press Start 2P', cursive;
-        display: table-cell;
-        vertical-align: middle;
-    }
-    
-    /*PANTALLA DE PAUSE*/
     .Pausa_Pantallalvl3 {
         position: absolute;
         top: 0%;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.541);
+        background: rgba(0, 0, 0, 0.7);
         text-align: center;
-        z-index: 1000000000;
+        z-index: 1000;
         display: none;
     }
     
-    /*ESTILOS GENERALES DE LOS METIORITOS*/
-    .Meteoritolvl3 {
-        cursor: pointer;
-        display: table; 
-        position: absolute;
-        top: 0%;
-        z-index: 1000;
-    }
+    .Meteoritolvl3 { cursor: pointer; display: table; position: absolute; top: 0%; z-index: 1000; }
+    #Meteoritolvl3{ top: 0%; left: -10%; transition: 1s; }
+    #Meteorito2lvl3{ top: 0%; position: absolute; left: -10%; transition: 2s; }
+    #Meteorito3lvl3{ top: 0%; position: absolute; left: -10%; transition: 3s; }
+    #Meteorito4lvl3{ top: 0%; position: absolute; left: -10%; transition: 4s; }
     
-    /*ESTILOS INDIVIDUALES DE MIS TRES METIORITOS*/
-    #Meteoritolvl3{
-        top: 0%;
-        left: -10%;
-        transition: 1s;
-    }
-    
-    #Meteorito2lvl3{
-        top: 0%;
-        position: absolute;
-        left: -10%;
-        transition: 2s;
-    }
-    
-    #Meteorito3lvl3{
-        top: 0%;
-        position: absolute;
-        left: -10%;
-        transition: 3s;
-    }
-    
-    #Meteorito4lvl3{
-        top: 0%;
-        position: absolute;
-        left: -10%;
-        transition: 4s;
-    }
-    
-    
-    /*ESTILO DEL PLANETA*/
     .Planetalvl3{
         position: absolute;
         top: 12%;
@@ -535,153 +731,38 @@ margin-left: 12%; }
         animation-timing-function: linear;
     }
     
-    @keyframes rotation {
-      0% {
-        transform:rotate(0deg);
-      }
-      100% {
-        transform:rotate(360deg);
-      }
-    }
+    .Limitelvl3 { height: 100%; width: 50px; border-left: 3px dotted red; position: absolute; top: 0%; left: 70%; }
     
+    .Cabezeralvl3 {height: 70px; border: 3px solid red; background: rgba(10, 24, 46, 0.85); border-bottom: none; display: flex; position: relative; color: white;}
     
-    /*ESTILO DEL LIMITE EN EL JUEGO*/
-    .Limitelvl3 {
-        height: 100%;
-        width: 50px;
-        border-left: 5px dotted white; 
-        position: absolute;
-        top: 0%;
-        left: 70%;
-    }
-    
-    /*CABEZARA DENTRO DEL JUEGO*/
-    .Cabezeralvl3 {height: 70px; 
-        border: 5px dashed red; 
-        background: rgba(255, 255, 255, 0.363); 
-        border-bottom: none; display: flex; 
-        position: relative; }
-    
-    /*ESTILOS DEL SPAN Y DEL TEXTO DE TIEMPO*/
-    .Tiempolvl3 {
+    .Tiempolvl3, .Puntajelvl3 {
         display: flex; align-items: center; justify-content: center;
         flex-direction: column;
-        width: 14%; height: 86%; color: black; 
-        font-size: 13px; line-height: 1vh ;
+        width: 20%; height: 86%; color: white; 
+        font-size: 13px; font-family: 'Orbitron', sans-serif;
     }
     
-    /*ESTILOS DEL SPAN Y DEL TEXTO DE PUNTAJE*/
-    .Puntajelvl3 {
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        flex-direction: column; 
-        width: 14%;
-        height: 86%;
-        color: black;
-        font-size: 13px;
-        line-height: 1vh;
-    }
+    .Pantalla_navelvl3 { display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; left: -100%; top: 0; }
+    .Pantalla_Nodrizalvl3 { display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; left: -100%; top: 32%; }
+    .Pantalla_nave2lvl3 { display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; left: -100%; top: 63%; }
     
-    /*ESTILOS DE LA SORPRESA*/
-    .Pantalla_navelvl3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: absolute;
-        left: -100%;
-        top: 0;
-    }
+    .Ovnislvl3 { width: 84px; transform: rotate(90deg); }
+    #Nodrizalvl3 { width: 140px; transform: rotate(90deg); }
     
-    .Pantalla_Nodrizalvl3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: absolute;
-        left: -100%;
-        top: 32%;
-    }
-    
-    .Pantalla_nave2lvl3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: absolute;
-        left: -100%;
-        top: 63%;
-    }
-    
-    .Ovnislvl3 {
-        width: 84px;
-        transform: rotate(90deg);
-    }
-    
-    #Nodrizalvl3 {
-        width: 140px;
-        transform: rotate(90deg);
-    }
-    
-    
-    
-    #Pantalla_creditoslvl3 {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        transition: 2s;
-    }
+    #Pantalla_creditoslvl3 { position: absolute; top: 0; width: 100%; height: 100%; background: transparent; transition: 2s; }
     
     #Creditoslvl3 {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: absolute;
-        top: -100%;
-        font-size: 26px;
-        color: snow;
-        line-height: 8px;
+        height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; top: -100%; font-size: 22px; color: snow; font-family: 'Orbitron', sans-serif;
     }
     
     #Proximolvl3 {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        position: absolute;
-        bottom: -100%;
-        font-size: 30px;
-        color: snow;
-        line-height: 5px;
-        line-height: 8px;
+        height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; position: absolute; bottom: -100%; font-size: 26px; color: snow; font-family: 'Orbitron', sans-serif;
     }
     
-    #Proximolvl3 h4 {
-        font-family: 'Press Start 2P', cursive;
-        line-height: 5px;
-    }
-    
-    #Creditoslvl3 h3 {
-        font-family: 'Press Start 2P', cursive;
-    }
-    
-    #Creditoslvl3 p {
-        font-family: 'Press Start 2P', cursive;
-    }
-    
-    /*ESTILOS DEL BOTON DE PAUSE*/
     .Pauselvl3{
-        width: 20%;
+        width: 25%;
         height: 70%;
-        font-size: 14px;
+        font-size: 12px;
         background: red;
         display: flex;
         align-items: center;
@@ -690,14 +771,15 @@ margin-left: 12%; }
         cursor: pointer;
         position: relative;
         top: 15%;
-        left: 50%;
+        left: 30%;
+        border-radius: 4px;
+        font-family: 'Orbitron', sans-serif;
     }
     
-    /*MENSAJE DENTRO DE PAUSE*/
     .Mensaje_Pauselvl3{
-        font-size: 50px;
+        font-size: 40px;
         color: white;
         display: table-cell;
         vertical-align: middle;
-        font-family: 'Press Start 2P', cursive;
+        font-family: 'Orbitron', sans-serif !important;
     }
