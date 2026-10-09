@@ -515,3 +515,41 @@ function Reloj_Tiempo(){
 Reloj_Tiempo()
 
 setInterval(Reloj_Tiempo, 1000)
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const pantalla = document.getElementById("pantallaCarga");
+    const barra = document.getElementById("barraProgreso");
+    const porcentaje = document.getElementById("porcentajeCarga");
+    const mensaje = document.getElementById("mensajeCarga");
+    const boton = document.getElementById("btnEntrar");
+
+    if (!pantalla || !barra || !porcentaje || !mensaje || !boton) {
+        return;
+    }
+
+    let progreso = 0;
+
+    const carga = setInterval(function () {
+        progreso = Math.min(100, progreso + 2);
+
+        barra.style.width = progreso + "%";
+        porcentaje.textContent = progreso + "%";
+
+        if (progreso < 100) {
+            mensaje.textContent = "PREPARANDO EL JUEGO...";
+        } else {
+            clearInterval(carga);
+
+            mensaje.textContent = "¡TODO LISTO!";
+            boton.disabled = false;
+            boton.textContent = "ENTRAR AL JUEGO";
+        }
+    }, 80);
+
+    boton.addEventListener("click", function () {
+        if (boton.disabled) return;
+
+        pantalla.remove();
+    });
+});
